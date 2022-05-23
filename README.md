@@ -1,1 +1,3 @@
 # Pr-ctica-Blockchain
+En este repositorio voy a subir programas que uso para estudiar y practicar programación blockchain.
+Voy a incluir programas escritos en Rust, solidity, JS...
