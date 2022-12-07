@@ -39,10 +39,11 @@ contract CRUD {
          //Para luego utilizarlo en cada una de las funciones (buscar, actualizar, eliminar)
         // find (indicamos lo que queremos buscar)
          function find (uint id) view internal returns (uint) {
-             for (uint i = 0; i < users.length; i++) {
+             for (uint i; i < users.length;) {
                  if (users [i].id == id) {
                      return i;
                  }
+                 unchecked{++i;}
              }
              revert ('EL USUARIO NO EXISTE');
          }
